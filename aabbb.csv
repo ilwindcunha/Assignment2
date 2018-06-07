@@ -1,0 +1,3 @@
+timee,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,typee,horizontalError,depthError,magError,magNst,statuss,locationSource,magSource
+6/7/2018 18:10,36.7560005,-121.595665,1.03,1.28,md,10,184,0.02584,0.05,nc,nc73026831,2018-06-07T18:12:34.417Z,"7km ESE of Prunedale, CA",earthquake,0.64,0.81,0.33,7,automatic,nc,nc
+6/7/2018 18:09,59.2507,-152.5542,72.1,2.2,ml,,,,0.44,ak,ak19726145,2018-06-07T18:13:00.550Z,"71km SW of Homer, Alaska",earthquake,,0.6,,,automatic,ak,ak
