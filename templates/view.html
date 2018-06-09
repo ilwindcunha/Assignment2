@@ -5,8 +5,7 @@
       <br> <br>
 
 
-
-
+      <center>
       <form action = "{{ url_for('addrec') }}" method = "POST">
 
           <label> Search for and count all earthquakes that occurred with a magnitude greater
@@ -15,23 +14,20 @@
           <label>Answer: No of records gotten </label> <strong>{{msg}}</strong>
       </form>
 
-      <form action = "{{ url_for('addrec') }}" method = "POST">
-      <h3>Student Information</h3>
-      Name<br>
+      <form action = "{{ url_for('search') }}" method = "POST">
+      <h3>Earth quake data</h3>
+          <label>Range 1</label><input type = "text" name = "range1" /></br>
+          <label>Range 2</label><input type = "text" name = "range2" /></br>
 
-      <input type = "text" name = "nm" /></br>
-
-      Address<br>
-      <textarea name = "add" ></textarea><br>
-
-      City<br>
-      <input type = "text" name = "city" /><br>
-
-      ZIP<br>
-      <input type = "text" name = "pin" /><br>
+          <select name="length">
+              <option value="day">day</option>
+              <option value="week">week</option>
+              <option value="month">month</option>
+          </select>
       <input type = "submit" value = "submit" /><br>
 
       </form>
+      </center>
       <br>
       <h2> <a href = "/">Home</a> </h2>
 
