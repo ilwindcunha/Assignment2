@@ -14,7 +14,7 @@
           <label>Answer: No of records gotten </label> <strong>{{msg}}</strong>
       </form>
 
-      <form action = "{{ url_for('search') }}" method = "POST">
+      <form action = "{{ url_for('query_search1') }}" method = "POST">
       <h3>Earth quake data</h3>
           <label>Range 1</label><input type = "text" name = "range1" /></br>
           <label>Range 2</label><input type = "text" name = "range2" /></br>
@@ -26,6 +26,24 @@
           </select>
       <input type = "submit" value = "submit" /><br>
 
+          <h2> Display results here</h2>
+             <table border = 1>
+         <thead>
+            <td>Mag</td>
+            <td>Lat</td>
+            <td>Long</td>
+
+         </thead>
+
+         {% for row in rows %}
+         <tr>
+            <td>{{row["mag"]}}</td>
+            <td>{{row["latitude"]}}</td>
+            <td> {{ row["longitude"]}}</td>
+
+         </tr>
+         {% endfor %}
+      </table>
       </form>
       </center>
       <br>
